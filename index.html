@@ -175,7 +175,7 @@
     .chip {
       font-size: 0.85rem; font-weight: 500;
       padding: 6px 14px; border-radius: 999px;
-      background: rgba(255,255,255,0.85); color: #991b1b;
+      background: rgba(185,28,28,0.16); color: #991b1b;
       border: 1px solid rgba(185,28,28,0.18);
     }
     .chip.teal { background: rgba(255,255,255,0.72); color: #7f1d1d; border-color: rgba(185,28,28,0.18); }
@@ -253,7 +253,7 @@
       align-items: center;
       padding: 56px;
       border-radius: 28px;
-      background: linear-gradient(135deg, #0b1020 0%, #1e1b4b 60%, #0e7490 100%);
+      background: linear-gradient(135deg,   #3b0a1a 0%, #6e112d 60%, #991b1b 100%);
       color: #fff;
       position: relative;
       overflow: hidden;
@@ -262,24 +262,24 @@
       content: "";
       position: absolute; right: -120px; bottom: -120px;
       width: 360px; height: 360px; border-radius: 50%;
-      background: radial-gradient(closest-side, rgba(16,185,129,0.35), transparent 70%);
+      background: radial-gradient(closest-side, rgba(239,68,68,0.28), transparent 70%);
       filter: blur(10px);
     }
     .cv-card h2 { color: #fff; }
     .cv-card p { color: rgba(255,255,255,0.78); }
-    .cv-card .eyebrow { color: #a5b4fc; }
+    .cv-card .eyebrow { color: #fecaca; }
     .cv-card ul { margin-top: 18px; display: grid; gap: 8px; }
     .cv-card li {
       display: flex; align-items: flex-start; gap: 10px;
       font-size: 0.96rem; color: rgba(255,255,255,0.85);
     }
     .cv-card li::before {
-      content: "✓"; color: #34d399; font-weight: 700; flex: none; margin-top: 1px;
+      content: "✓"; color: #fca5a5; font-weight: 700; flex: none; margin-top: 1px;
     }
     .cv-card .cta-row { margin-top: 28px; }
-    .cv-card .btn-primary { background: #fff; color: #0b1020; box-shadow: 0 10px 30px -10px rgba(0,0,0,0.4); }
+    .cv-card .btn-primary { background: #fff; color: #7f1d1d; box-shadow: 0 10px 30px -10px rgba(0,0,0,0.4); }
     .cv-card .btn-primary:hover { background: #f1f5ff; }
-    .cv-card .btn-ghost { background: rgba(255,255,255,0.08); color: #fff; border-color: rgba(255,255,255,0.25); }
+    .cv-card .btn-ghost { background: rgba(255,255,255,0.08); color: #fff; border-color: rgba(255,255,255,0.22); }
     .cv-card .btn-ghost:hover { background: rgba(255,255,255,0.14); }
  
     /* ---------- Contact ---------- */
@@ -341,7 +341,7 @@
     <div class="container nav-inner">
       <a href="#home" class="brand">
         <span class="brand-dot"></span>
-        <span>Clarisa Caballero</span>
+        <span>Clarisa Caballero-Ignacio</span>
       </a>
       <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
         <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M1 1h16M1 7h16M1 13h16" stroke="#0b1020" stroke-width="2" stroke-linecap="round"/></svg>
@@ -363,14 +363,14 @@
     <div class="container">
       <div class="hero-greeting">
         <span class="wave">👋</span>
-        <span>Hola / Hello — Bienvenidos! Welcome!</span>
+        <span>Hola! Bienvenidos! / Hello! Welcome!</span>
       </div>
       <h1>
         I'm <span class="gradient-text">Clarisa</span>.<br/>
         Chemist by training, <br/>engineer by next degree.
       </h1>
       <p class="tagline">
-        Analytical chemist turned graduate student in the Master of Engineering in Computer Science program,
+        Graduate student in the Master of Engineering in Computer Science program,
         focusing on <strong>Cybersecurity</strong> with a minor in <strong>Artificial Intelligence</strong>.
         I also coordinate student outreach and scholarships for the College of Agricultural Sciences
         and advise the MANRRS and SACNAS chapters.
@@ -386,9 +386,10 @@
       <div class="hero-chips">
         <span class="chip">Cybersecurity</span>
         <span class="chip teal">Artificial Intelligence</span>
+        <span class="chip teal">Computer Science</span>
         <span class="chip green">Analytical Chemistry</span>
-        <span class="chip">MANRRS Advisor</span>
-        <span class="chip teal">SACNAS Advisor</span>
+        <span class="chip">MANRRS Chapter Advisor</span>
+        <span class="chip teal">SACNAS Chapter Advisor</span>
       </div>
     </div>
   </header>

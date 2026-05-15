@@ -76,7 +76,7 @@
     }
     .brand-dot {
       width: 10px; height: 10px; border-radius: 50%;
-      background: linear-gradient(135deg, #b91c1c, #b91c1c, #dc2626);
+      background: linear-gradient(135deg, #7f1d1d, #b91c1c, #dc2626);
       box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
     }
     .nav-links { display: flex; gap: 8px; align-items: center; }
@@ -153,7 +153,7 @@
       cursor: pointer;
     }
     .btn-primary {
-      background: linear-gradient(90deg, #b91c1c, #06b6d4);
+      background: linear-gradient(90deg, #7f1d1d, #b91c1c);
       color: #fff;
       box-shadow: 0 10px 30px -10px rgba(99,102,241,0.55);
     }
@@ -226,20 +226,20 @@
     .card:hover {
       transform: translateY(-3px);
       box-shadow: 0 24px 48px -24px rgba(15,23,42,0.18);
-      border-color: rgba(99,102,241,0.25);
+      border-color: rgba(185,28,28,0.08);
     }
     .card:hover::before { opacity: 1; }
     .card .meta {
       font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
-      color: #6366f1; margin-bottom: 10px;
+      color: #dc2626; margin-bottom: 10px;
     }
     .card h3 { margin-bottom: 8px; line-height: 1.3; }
     .card p { font-size: 0.95rem; }
     .card a.read {
       display: inline-flex; align-items: center; gap: 6px;
-      margin-top: 14px; font-weight: 600; font-size: 0.92rem; color: #4338ca;
+      margin-top: 14px; font-weight: 600; font-size: 0.92rem; color: #7f1d1d;
     }
-    .card a.read:hover { color: #b91c1c; }
+    .card a.read:hover { color: #7f1d1d; }
  
     /* ---------- CV ---------- */
     .cv-card {
@@ -296,7 +296,7 @@
     .contact-card:hover { border-color: rgba(99,102,241,0.35); transform: translateY(-2px); }
     .contact-card .icon-square {
       flex: none; width: 44px; height: 44px; border-radius: 12px;
-      background: linear-gradient(135deg, #b91c1c, #06b6d4);
+      background: linear-gradient(135deg, #b91c1c, #dc2626);
       color: #fff; display: grid; place-items: center; font-weight: 700;
     }
     .contact-card .label { font-size: 0.78rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
@@ -337,15 +337,17 @@
     <div class="container nav-inner">
       <a href="#home" class="brand">
         <span class="brand-dot"></span>
-        <span>[Clarisa]</span>
+        <span>[Clarisa Caballero]</span>
       </a>
       <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
         <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M1 1h16M1 7h16M1 13h16" stroke="#0b1020" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
       <div class="nav-links" id="navLinks">
         <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
         <a href="#awards">Awards</a>
-        <a href="#articles">Writing</a>
+        <a href="#articles">Selected Articles</a>
         <a href="#contact">Contact</a>
         <a href="cv.pdf" class="cta" target="_blank" rel="noopener">CV →</a>
       </div>
@@ -360,7 +362,7 @@
         <span>Hola / Hello — welcome</span>
       </div>
       <h1>
-        I'm <span class="gradient-text">[Clarisa]</span>.<br/>
+        I'm <span class="gradient-text">Clarisa</span>.<br/>
         Chemist by training, <br/>engineer by next degree.
       </h1>
       <p class="tagline">
@@ -438,20 +440,20 @@
  
       <div class="grid">
         <article class="card">
-          <div class="meta">[2026]</div>
-          <h3>[State of Inclusive Excellence at Oregon State University]</h3>
-          <p>[Recognition for OSU's advanced Inclusive Excellence mission through creativity, innovation, and determination.]</p>
+          <div class="meta">2026</div>
+          <h3>State of Inclusive Excellence at Oregon State University</h3>
+          <p>Recognition for OSU's advanced Inclusive Excellence mission through creativity, innovation, and determination.</p>
         </article>
  
         <article class="card">
-          <div class="meta">[2025]</div>
-          <h3>[Club Advisor of the Year]</h3>
-          <p>[College of Agricultural Sciences Club Advisor of the Year.]</p>
+          <div class="meta">2025</div>
+          <h3>Club Advisor of the Year</h3>
+          <p>College of Agricultural Sciences Club Advisor of the Year.</p>
         </article>
  
         <article class="card">
-          <div class="meta">[2025]</div>
-          <h3>[SACNAS Chapter of the Year]</h3>
+          <div class="meta">2025</div>
+          <h3>SACNAS Chapter of the Year</h3>
           <p>[Granting body — one or two lines on the award.]</p>
         </article>
  
@@ -552,9 +554,14 @@
         <a class="contact-card" href="mailto:caballec.ci@gmail.com">
           <div class="icon-square">@</div>
           <div>
-            <div class="label">Email</div>
+            <div class="label">Personal Email</div>
             <div class="value">vidadeclarisa@gmail.com</div>
           </div>
+          <a class="contact-card" href="mailto:caballec.ci@gmail.com">
+          <div class="icon-square">@</div>
+          <div>
+            <div class="label">Work Email</div>
+            <div class="value">clarisa.caballero@oregonstate.edu/div>
         </a>
       </div>
     </div>
@@ -563,9 +570,8 @@
   <!-- ============ FOOTER ============ -->
   <footer>
     <div class="container">
-      © <span id="year"></span> [Clarisa]
-      <span class="dot">·</span> Built with care
-      <span class="dot">·</span> Hola / Hello
+      © <span id="year"></span> Clarisa
+    
     </div>
   </footer>
  
